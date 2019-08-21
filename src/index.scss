@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+$primary-color: #eee;
+$inverse-color: darken($primary-color, 80);
+
+nav ul {
+  margin: 0;
+  padding: 16px 8px;
+
+  li {
+    padding: 0 8px;
+    display: inline-block;
+
+    a {
+      color: $inverse-color;
+      padding: 6px 12px;
+      background-color: $primary-color;
+      border-radius: 2px;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary-color;
+        background-color: lighten($inverse-color, 15);
+      }
+
+      &.active {
+        color: $primary-color;
+        background-color: $inverse-color;
+      }
+    }
+  }
+}
+
+h1 {
+  margin: 8px 0 0;
+  padding: 0 16px;
+}
